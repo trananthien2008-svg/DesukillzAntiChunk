@@ -1,0 +1,23 @@
+name: DesukillzAntiChunk
+prefix: Desukillz Anti Chunk
+version: 1.0.0
+main: me.desukillz.antichunk.AntiChunkPlugin
+api-version: '1.20'
+folia-supported: true
+depend: [ProtocolLib]
+description: Ẩn block, hiệu ứng và sinh vật dưới tầng y=0, tải dần khi người chơi xuống gần y=10.
+
+commands:
+  antichunk:
+    description: Quản lý Desukillz Anti Chunk
+    usage: /antichunk <reload|status>
+    aliases: [dac]
+    permission: desukillz.admin
+
+permissions:
+  desukillz.admin:
+    description: Dùng lệnh /antichunk
+    default: op
+  desukillz.bypass:
+    description: Luôn nhìn thấy mọi thứ dưới y=0 (không bị ẩn)
+    default: false

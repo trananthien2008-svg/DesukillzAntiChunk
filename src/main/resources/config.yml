@@ -1,0 +1,34 @@
+# ============================================================
+#  Desukillz Anti Chunk
+# ============================================================
+
+# Các world được áp dụng. Dùng "*" để áp dụng cho mọi world.
+worlds:
+  - world
+
+# Mọi thứ nằm DƯỚI độ cao này sẽ bị ẩn với người chơi ở xa.
+# Tự làm tròn xuống bội số của 16 (mặc định 0).
+hide-below-y: 0
+
+# Người chơi có y <= reveal-y thì bắt đầu được tải khu vực bên dưới.
+reveal-y: 10
+
+# Người chơi phải lên y > hide-y thì khu vực bên dưới mới bị ẩn lại.
+# Khoảng cách với reveal-y giúp tránh nhấp nháy khi đứng ngay mép.
+hide-y: 14
+
+# Số chunk gửi lại cho mỗi người chơi trong mỗi tick khi chuyển trạng thái.
+# Số nhỏ = mượt hơn nhưng khu vực bên dưới hiện ra chậm hơn.
+chunks-per-tick: 4
+
+# Bật / tắt từng phần (áp dụng ngay khi /antichunk reload)
+modules:
+  blocks: true     # block, block entity (rương, biển...) và cập nhật block
+  effects: true    # hạt, âm thanh, hiệu ứng thế giới, vụ nổ
+  entities: true   # sinh vật, vật phẩm rơi, armor stand...
+
+# Ẩn luôn người chơi khác đang đứng dưới y=0
+hide-players: true
+
+# In thêm thông tin gỡ lỗi ra console
+debug: false
